@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Página de Videojuegos</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="/registro" method="post">
+        <!-- Campo Nombre -->
+        <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+        </p>
+        
+        <!-- Campo Edad -->
+        <p>
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad" min="18" required>
+        </p>
+        
+        <!-- Campo Correo Electrónico -->
+        <p>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+        
+        <!-- Campo Contraseña -->
+        <p>
+            <label for="contrasena">Contraseña:</label><br>
+            <input type="password" id="contrasena" name="contrasena" minlength="6" maxlength="12" required>
+        </p>
+        
+        <!-- Consolas preferidas -->
+        <p>
+            <label for="consolas">Consolas preferidas:</label><br>
+            <input type="checkbox" id="switch" name="consolas" value="Nintendo Switch">
+            <label for="switch">Nintendo Switch</label><br>
+            
+            <input type="checkbox" id="ps5" name="consolas" value="PS5">
+            <label for="ps5">PS5</label><br>
+            
+            <input type="checkbox" id="xbox_x" name="consolas" value="Xbox Series X">
+            <label for="xbox_x">Xbox Series X</label><br>
+            
+            <input type="checkbox" id="xbox_s" name="consolas" value="Xbox Series S">
+            <label for="xbox_s">Xbox Series S</label><br>
+            
+            <input type="checkbox" id="steam_deck" name="consolas" value="Steam Deck">
+            <label for="steam_deck">Steam Deck</label><br>
+            
+            <input type="checkbox" id="otras" name="consolas" value="Otras">
+            <label for="otras">Otras</label>
+        </p>
+
+        <!-- Subscribir a notificaciones -->
+        <p>
+            <input type="checkbox" id="notificaciones" name="notificaciones">
+            <label for="notificaciones">Quiero recibir notificaciones por correo electrónico</label>
+        </p>
+        
+        <!-- Comentarios -->
+        <p>
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" cols="50" rows="7"></textarea>
+        </p>
+        
+        <!-- Botón de envío -->
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>
